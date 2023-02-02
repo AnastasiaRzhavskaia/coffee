@@ -2,7 +2,7 @@ function Shop({shopComponent}) {
     return (
         <div className="products">
             {shopComponent.map((element => {
-                const {id, item, weight, price, image, flavor, searchTerm} = element;
+                const {id, item, weight, price, image, flavor} = element;
                 return (
                     <div className="product-card" key={id}>
                         <img className="img-product" src={image} width="380px" alt="item" />
